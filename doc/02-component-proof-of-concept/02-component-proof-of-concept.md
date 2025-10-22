@@ -1,8 +1,8 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: SING HOI LEO ZHUANG
+- **Dot Number**: Zhuang.328
+- **Due Date**: 2025.10.9
 
 ## Assignment Overview
 
@@ -30,7 +30,6 @@ the more work you can put in now, the better.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -114,8 +113,7 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-<!-- TODO: briefly argue your choice of design or design something
-new; then delete this comment -->
+- I would lke to choose my third choice which is the hourly scheduler. The reason that I gave up on the shopping cart component and the matrix is because the shopping cart component requires a lot of techniques that I do not even have access to it, like searching for similar products and look for a better prices. That requires a vast database from some online shopping platforms which I do not even have access to. Without this kinds of availabilities, I think my component would not be completed. The matrix was just too common among all components, and its expansibility is too small. This hourly scheduler is a component that could actually benefit me ore somebody else's daily life, also there could be some more added up to current functions. It is not too hard though, whcih could be finished on time.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
