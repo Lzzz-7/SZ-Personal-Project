@@ -76,3 +76,35 @@ the following form: YYYY.0M.0D.
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
+<<<<<<< Updated upstream
+=======
+
+## 2025.09.19
+
+### Added
+
+- Designed a Shopping Cart component
+- Designed a Matrix component
+- Designed a HourlyTaskScheduler
+
+
+## 2025.10.09
+
+### Added
+
+- Designed a proof of concept for HourlyTaskScheduler component.
+
+### Updated
+
+- Changed design to include two class files that include Task class and the HourlytaskScheduler class. Add kernel methods and secondary methods.
+
+## 2025.10.23
+
+### Added
+
+- Designed kernel and enhanced interfaces for HourlyTaskScheduler component
+
+### Updated
+
+- Changed design to include two interfaces, HourlyTaskSchedulerKernel and HourlyTaskScheduler.
+>>>>>>> Stashed changes
