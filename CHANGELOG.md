@@ -76,8 +76,6 @@ the following form: YYYY.0M.0D.
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
-<<<<<<< Updated upstream
-=======
 
 ## 2025.09.19
 
@@ -107,4 +105,3 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include two interfaces, HourlyTaskSchedulerKernel and HourlyTaskScheduler.
->>>>>>> Stashed changes
