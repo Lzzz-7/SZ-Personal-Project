@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
-
+- **Name**: SING HOI LEO ZHUANG
+- **Dot Number**: Zhuang.328
+- **Due Date**: 2025.9.19
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +49,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +63,6 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,15 +101,11 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+
+- I do not have much to talk about my career goal. I think it is too vague to talk about what I want to do before I really start or try to do something in the industry. Instead, I'd like to share my interst in Brain Computer Interface. I started to know about this since high school when I watched a Japanese anime called Sword Art Online. I was fascinated by the machine putting on the head and could link people's mind to a virtual world. I have not done a lot about this field beside my neuroscience class in high school, but I think this could certainly be one of my career goals in the future since I already have years of interests into BCI. So far, I'd like to do some small components or programs that could help people's daily life. I had done a research on data-driven product suggestion because I had once saw my dad fustrated by unfitting size of shoes that he purchased online. I had similar experience too, and I know it is very annoying. Therefore, I did research on it and found that random forest machine learning algorithm could help a lot when trying to suggest some products to a customer by their body data and other preferences. I was not able to really make such an APP that could do this due to technical limitation, but interestingly, while I was doing the research, I found that some Chinese shopping APP like "Poizon" had just done something similarly, which they could suggest the size of a cloth or a pair of shoes to customers by insertting height and weight. Well, I would say there's a lot that they could update on that component.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -122,7 +113,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -132,7 +122,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +189,88 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: <!-- TODO: give component a name then delete this comment -->Shopping Cart
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->The purpose of this component is to allow customers to collect the product and check them out. Further development could include searching for the same product as the one at the cart but compare them based on prices, reputation, etc.
   - **Kernel Methods**:
     - <!-- TODO: list kernel methods then delete this comment -->
+    - void addItem(cart, item): Add this product to the cart.
+    - void removeItem(item): Remove this product from the cart.
+    - int countPrice(cart): Count the total price that would be checked out.
   - **Secondary Methods**:
     - <!-- TODO: list secondary methods then delete this comment -->
+    - void updateAddition(cart, item): Update and save the cart status when any item added.
+    - void updateRemoval(cart, item): Update and save the cart status when any item removed.
+    - Set<item> selectItem: Select this item into the list for checking out.
+    - Set<item> unselectItem: Unselect this item form the list for checking out.
+    - Map<item> compareItem: Compare item added into the cart with same or similar items from the same searching engine. Compare them by prices and reputations.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. Anytime when item is added or removed, the state of the cart is changed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. This component relies on "Maps in Maps" and Sets.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
       - <!-- TODO: provide an argument then delete this comment -->
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->When remove an item from the cart, first call updateRemoval() and let it call removeItem(), so that this item is removed from thd cart and the current status of the cart is saved into the database.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: <!-- TODO: give component a name then delete this comment -->Matrix
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->This component allow users to create a matrix and insert values to do calculations.
   - **Kernel Methods**:
     - <!-- TODO: list kernel methods then delete this comment -->
+    - public Matrix(int rows, int cols): Initializes the matrix dimensions and allocates memory for the data.
+    - double get(int row, int col): Access a value at a specific index.
+    - void set(int row, int col, double value): Insert a value to a specific index.
+    - int getRows(): Return number of rows.
+    - int getCols(): Return number of columns.
+    - Matrix add(Matrix other): Add this matrix to another. Return a new matrix.
+    - Matrix multiply(Matrix other): Multiply this matrix to another. Return a new matrix.
   - **Secondary Methods**:
     - <!-- TODO: list secondary methods then delete this comment -->
+    - String toString(): Return the string representation of the matrix.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. Every insert or removal of values can change the state of the matrix.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. This component relies on Arrays.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. Constants can help make sure that number of columns are equal in each row.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->When calling toString(), it needs to get values from all index of the matrix, thus calling the kernel method get().
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: <!-- TODO: give component a name then delete this comment -->HourlyTaskScheduler
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->The HourlyTaskScheduler component manages tasks that are scheduled at specific time intervals throughout a single day. The day is divided into 24 hourly time blocks (0–23), and tasks will be stored hourly within 24 blocks. Users are able to add and remove tasks, and check whether the time frame is available when trying to add a task. The component is also able to print out the task list for the day.
   - **Kernel Methods**:
     - <!-- TODO: list kernel methods then delete this comment -->
+    - void add(T taskName, int startTime, int endTime): add a task into the list.
+    - void printTasks(int hours): print all tasks at a specific time (like 14 will be targeting at 2 p.m. to 3 p.m.).
+    - boolean ifAvailable(double atTime): check if a time frame is available.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - void remove(taskName): remove the specified task from the list.
+    - void printAllTasks(): print all hourly tasks for the day.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. This component is mutable because the schedular will be changed every time when a task is added.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes. This component relies on Map(Integer, Sequence<String>). When the user wants to add tasks, they will add them by using the time as keys, so the variable type for key is Integer. Also, there might be more than one task that the user want to do at certain time, so instead of String, we use Sequence<String>.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Enums are not required in this component, because so far I do not have set any task type, so enums are not needed unless I set any type like "WORKING" or "BREAK". Constants could help. I can set DAILY_TIME = 24.0 to represent the 24 hours of a day.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->Yes the secondary methods can be implemented using the kernel methods. The method printAllTasks() is used to print all tasks for the day. To implement it, for loop the 24 hours and use printTasks(int hour) to print all tasks for each hour.
 
 ## Post-Assignment
 
@@ -270,7 +279,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -292,9 +300,9 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a <!-- insert name of component 1 here --> Shopping Cart component
+- Designed a <!-- insert name of component 2 here --> Matrix component
+- Designed a <!-- insert name of component 3 here --> Personal Profile component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -309,7 +317,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -319,11 +326,9 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -350,7 +355,6 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
