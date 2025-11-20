@@ -94,4 +94,18 @@ the following form: YYYY.0M.0D.
 
 ### Updated
 
+<<<<<<< HEAD
 - Changed design to include two class files that include Task class and the HourlytaskScheduler class. Add kernel methods and secondary methods.
+=======
+- Changed design to include two class files that include Task class and the HourlytaskScheduler class. Add kernel methods and secondary methods.
+
+## 2025.10.23
+
+### Added
+
+- Designed kernel and enhanced interfaces for HourlyTaskScheduler component
+
+### Updated
+
+- Changed design to include two interfaces, HourlyTaskSchedulerKernel and HourlyTaskScheduler.
+>>>>>>> interfaces
