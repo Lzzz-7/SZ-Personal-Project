@@ -106,7 +106,7 @@ the following form: YYYY.0M.0D.
 
 - Changed design to include two interfaces, HourlyTaskSchedulerKernel and HourlyTaskScheduler.
 
-## 2025.10.23
+## 2025.11.7
 
 ### Added
 
@@ -115,3 +115,9 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Kernel method in HourlyTaskSchedulerKernel.java
+
+## 2025.11.21
+
+### Added
+
+- Designed a kernel class implementing the kernel methods.
