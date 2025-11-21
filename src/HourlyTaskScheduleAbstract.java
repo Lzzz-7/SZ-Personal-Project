@@ -1,10 +1,11 @@
 import javax.sound.midi.Sequence;
 
-public abstract class HourlyTaskScheduleAbstract implements HourlyTaskSchedulerKernel {
+public abstract class HourlyTaskScheduleAbstract
+        implements HourlyTaskScheduler {
     public void printTasks(int h) {
         System.out.print("During the time at " + h + ":00, you have ");
-        if (timeBlocks.hasKey(h)) {
-            Sequence<String> tasks = timeBlocks.value(h);
+        if (this.hasKey(h)) {
+            Sequence<String> tasks = this.value(h);
             for (int i = 0; i < tasks.length(); i++) {
                 System.out.print(tasks.entry(i) + ", ");
             }
@@ -18,15 +19,15 @@ public abstract class HourlyTaskScheduleAbstract implements HourlyTaskSchedulerK
         for (int h = 0; h < 24; h++) {
             this.printTasks(h);
         }
-    }
+    }s
 
     public void remove(Task t) {
         for (int i = (int) t.startTime(); i <= (int) t.endTime(); i++) {
-            if (timeBlocks.hasKey(i)) {
-                Sequence<String> taskList = timeBlocks.value(i);
+            if (this.hasKey(i)) {
+                Sequence<String> taskList = this.value(i);
                 Sequence<String> tempList = taskList.newInstance();
-                for (int i = 0; i < taskList.size(); i++) {
-                    String temp = taskList.remove(i);
+                for (int j = 0; j < taskList.size(); j++) {
+                    String temp = taskList.remove(j);
                     if (!temp.equals(t.name())) {
                         tempList.add(temp);
                     }
