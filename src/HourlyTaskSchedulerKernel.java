@@ -21,13 +21,5 @@ public interface HourlyTaskSchedulerKernel {
      */
     boolean ifAvailable(double time);
 
-    /**
-     * Prints all tasks at a given time.
-     *
-     * @param hour
-     *            the hour to print
-     * @requires 0 <= hour < 24
-     * @ensures output = task names during that hour
-     */
-    void printTasksAtHour(int hour);
+
 }
