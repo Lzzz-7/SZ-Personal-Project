@@ -41,7 +41,7 @@ public abstract class HourlyTaskScheduleAbstract
     }
 
     @Override
-    public abstract boolean ifAvailable(double h);
+    public abstract boolean ifAvailable(int h);
 
     @Override
     public abstract void addTask(Task t);
