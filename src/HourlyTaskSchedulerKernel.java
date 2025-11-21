@@ -19,15 +19,7 @@ public interface HourlyTaskSchedulerKernel {
      * @requires 0.0 <= time < 24.0
      * @ensures isBusyAt = (there is a task that overlaps with time)
      */
-    boolean isBusyAt(double time);
+    boolean ifAvailable(double time);
 
-    /**
-     * Prints all tasks at a given time.
-     *
-     * @param hour
-     *            the hour to print
-     * @requires 0 <= hour < 24
-     * @ensures output = task names during that hour
-     */
-    void printTasksAtHour(int hour);
+
 }
