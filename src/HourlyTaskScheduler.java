@@ -12,6 +12,16 @@ public interface HourlyTaskScheduler extends HourlyTaskSchedulerKernel {
     void removeTask(Task t);
 
     /**
+     * Prints all tasks at a given time.
+     *
+     * @param h
+     *            the hour to print
+     * @requires 0 <= hour < 24
+     * @ensures output = task names during that hour
+     */
+    void printTasks(int h);
+
+    /**
      * Prints al tasks of a day.
      *
      * @ensures output = all tasks scheduled during the day
